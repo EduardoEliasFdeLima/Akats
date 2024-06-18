@@ -1,0 +1,276 @@
+#objetivos{
+    
+        background-color: #1B1B1B;
+        color: #c9c9c9;
+        padding: 0px 0px 0px 120px;
+    
+}
+
+
+.mainOBJ{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* background-color: aqua;
+    */
+}
+
+
+.objcontain{
+    padding: 120px 0px;
+    padding-bottom: 80px;
+}
+
+
+
+.objcontain h1{
+    /* margin-top: -10px; */
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+
+
+
+.objcontain h1:after{
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 10px;
+    z-index: -1;
+
+    content: '\f140';
+    font-family: fontAwesome;
+    color: #C44351;
+    font-size: 30px;
+
+}
+
+
+.threebox{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* justify-content: space-between; */
+    gap: 40px;
+    padding-bottom: 30px;
+}
+
+.threebox .boxObj{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #171414;
+    padding: 20px;
+}
+
+.lineTopObj{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.boxObj .lineTopObj i{
+    font-size: 32px;
+    color: #C44351;
+}
+
+.boxObj .lineTopObj h2{
+    font-size: 22px;
+}
+
+.boxObj p{
+    line-height: 19px;
+    font-size: 14px;
+}
+
+.textoobj{
+    width: 85%;
+    padding-bottom: 20px;
+    line-height: 24px;
+}
+
+
+
+.fotofundo{
+
+    /* width: 710px; */
+
+
+
+}
+
+.fotofundo img{
+    
+    width: 500px;
+    height: 100%;
+    opacity: .2;
+
+}
+
+
+
+#objetivos .objcontain:hover .line{
+    /* background-color: aqua; */
+    width: 55%;
+}
+
+
+@media screen and (max-width: 1350px){
+    .fotofundo img{
+        display: none;
+    }
+
+  
+
+     .objcontain{
+        padding: 0px 0px;
+
+    }
+    #objetivos{
+        padding: 100px 120px;
+    }
+
+        
+    .threebox{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media screen and (max-width: 1150px){
+    #objetivos{
+        padding: 100px 100px;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+ 
+        /* padding: 80px 60px; */
+    #objetivos{   
+        background-color: #1B1B1B;
+        color: #c9c9c9;
+         padding: 80px 60px;
+        
+    }
+    
+    .mainOBJ{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .objcontain{
+        padding: 0px 0px;
+        padding-bottom: 50px;
+        /* background-color: #C44351; */
+    }
+
+        
+    .threebox{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: 100%;
+        /* justify-content: space-between; */
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+
+        
+    .textoobj{
+        width: 100%;
+        padding-bottom: 20px;
+        line-height: 24px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+    #objetivos{   
+        padding: 60px 30px;
+        
+    }
+
+        
+    .threebox{
+        margin-top: 20px;
+        display: flex;
+        /* flex-direction: unset; */
+        width: 100%;
+        /* justify-content: space-between; */
+        flex-flow:  wrap-reverse row;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .threebox .boxObj{
+        width: 150px;
+        /* width: 100%; */
+        height: 150px;
+        border-radius: 5px;
+        background-color: #171414;
+        padding: 15px;
+
+    }
+
+   
+        
+    .lineTopObj{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+       
+        padding-bottom: 15px;
+    }
+
+    .boxObj .lineTopObj i{
+        font-size: 28px;
+        color: #C44351;
+    }
+    
+    .boxObj .lineTopObj h2{
+        font-size: 16px;
+    }
+    
+    .boxObj p{
+        line-height: 14px;
+        font-size: 10px;
+    }
+
+        
+    .textoobj{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+        
+
+        
+    .objcontain h1{
+        font-size: 40px;
+    }
+
+
+
+}
+
+
