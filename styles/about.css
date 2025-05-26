@@ -6,7 +6,6 @@
     color: #c9c9c9;
 }
 
-
 .contain{
     display: flex;
     justify-content: space-evenly;
@@ -147,14 +146,12 @@
     section{
         padding: 60px 30px;
     }
-
         
     .txts h2{
         font-size: 40px;
         padding-bottom: 10px;
     }
-
-        
+     
     #about .txts h2::before{
         top: 10px;
         left: -10px;
@@ -177,7 +174,6 @@
         width: 230px;
         height: 230px;
     }
-
             
 }
 
