@@ -1,3 +1,5 @@
+
+
 ul{  
     list-style-type: none;
 }
@@ -6,8 +8,9 @@ a{
     color: #c9c9c9;
 }
 
+
 footer{
-    padding: 60px 120px;
+    padding: 60px 300px;
     background: #141313;
     color: #c9c9c9;
     display: flex;
@@ -15,11 +18,13 @@ footer{
     justify-content: space-between;
 }
 
-.midias{
+
+.midias{ 
     align-self: flex-end;
     justify-self: flex-end;
     width: 100px;
     color: #C44351;
+   
 }
 
 .midias ul{
@@ -28,18 +33,24 @@ footer{
     gap: 20px;
 }
 
+
 .midias ul li {
+
   font-size: 20px;
   color: #C44351;
 }
 
 .midias ul li a i{
+    /* color: #C44351; */
     transition: 1s;
 }
 
 .midias ul li a i:hover{
+    
     color: #C44351;
 }
+
+
 
 .txtfooters h3{
     font-size: 20px;
@@ -53,6 +64,7 @@ footer{
     padding-bottom: 10px;
 }
 
+
 .txtfooters ul li{
     padding-bottom: 8px;
 }
@@ -63,7 +75,18 @@ footer{
 }
 
 
+
+@media screen and (max-width: 1550px){
+    footer{
+        padding: 100px 150px;
+    }
+
+}
+
+
+
 @media screen and (max-width: 1150px){
+
     footer{
         padding: 120px 100px;
     }
@@ -71,34 +94,48 @@ footer{
 
 @media screen and (max-width: 850px) {
 
+        
     footer{
-        padding: 60px 60px;
+        padding: 80px 60px;
         padding-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
     }
 
 }
 
+
+
 @media screen and (max-width: 500px) {
 
     footer{
-        padding: 40px 30px;
+        padding: 50px 30px;
         padding-bottom: 50px;
-    }
 
+    }
+        
     .txtfooters h3{
         font-size: 17px;
         padding-bottom: 30px;
     }
+
         
     .txtfooters p{
+        font-family: 'Poppins';
         font-size: 16px;
+        padding-bottom: 10px;
     }
+
+
         
     .midias ul li {
         font-size: 16px;
         color: #C44351;
     }
 
+        
     .txtfooters ul li{
         font-size: 14px;
         padding-bottom: 6px;

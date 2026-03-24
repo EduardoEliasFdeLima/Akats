@@ -1,13 +1,18 @@
 .inner-width{
+    /* max-width: 1300px; */
     width: 100%;
     margin: auto;
     padding: 0 40px;
+    /* overflow: hidden; */
+
 }
 
 .inner-width h1{
     text-align: center;
+    /* font-size: 30px; */
     color: #fff;
     padding-bottom: 25px;
+   
 }
 
 .inner-width p{
@@ -19,16 +24,22 @@
 
 
 .fotos{
+    /* background: #fcf9f9;
+    background: #f1f1f1; */
     background: #252424;
     color: #c9c9c9;
-    padding: 0 120px;
+    /* padding: 0 120px; */
+    padding: 0 300px;
 }
   
 .fotos .inner-width{
     position: relative;
     display: flex;
     justify-content: space-between;
+    /* background: #fcf9f9; */
+    /* padding-top: 70px; */
     padding: 90px 60px 0 0;
+    /* background-color: aqua; */
 }
 
 .fotos .inner-width img{
@@ -40,8 +51,10 @@
 
 
 .fotos .inner-width img:hover{
+    /* transform: Scale(1.2); */
     opacity: .7;
 }
+
 
 .fotos .inner-width .tlt{
     max-width: 400px;
@@ -63,26 +76,35 @@
     text-align: left;
     font-family: 'Poppins';
     position: relative;
-    z-index: 2;   
+    z-index: 2;
+    
 }
 
 
-#duplas .inner-width .tlt h1::after{ 
+#duplas .inner-width .tlt h1::after{
+  
     position: absolute;
     margin-left: -8px;
     margin-top: -0px;
     z-index: -1;
+
     content: '\f030';
     font-family: fontAwesome;
+
     font-size: 30px;
     color: #c44351;
+
 }
+
+
 
 
 
 /* -------------- */
 
+
 #galeria{
+    /* padding: 80px 60px; */
     position: relative;
     background: linear-gradient(0deg,  #411B1F, #541920);
     height: max-content;
@@ -91,14 +113,19 @@
 
 }
 
+
 #duplas .tlt:hover .line{
     width: 55%;
 }
 
+
 .row{
     display: flex;
     flex-direction: row;
+
+    
     justify-content: center;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
 }
 
@@ -106,6 +133,7 @@
 .fotitas{
     position: relative;
     border-radius: 5px;
+
     width: calc(33% - 10px);
     min-width: 300px;
     height: 200px;
@@ -115,6 +143,8 @@
     padding: 0px;  
     border: 5px solid #1b1b1b;
     overflow: hidden;
+   
+
 }
 
 .fotitas img{
@@ -126,6 +156,7 @@
     transition: .9s;
     z-index: 102;
     user-select: none;
+  
 }
 
 .fotitas img:hover{
@@ -140,6 +171,7 @@
     bottom: 0px;
     left: 20px;
     color: #c9c9c9;
+    /* display: none; */
     transition-delay: 2s;
     padding-bottom: 5px;
 }
@@ -149,13 +181,20 @@
     z-index: 100;
     top: 0px;
     right: 20px;
+    color: whitesmoke;
     color: #c9c9c9;
+    /* display: none; */
     transition-delay: 2s;
     padding-bottom: 5px;
 }
 
 
-@media screen and (max-width: 1350px){
+
+@media screen and (max-width: 1550px){
+    
+    .fotos{
+        padding: 0 150px;
+    }
 
 }
 
@@ -163,25 +202,42 @@
 @media screen and (max-width: 850px) {
    
     .fotos{
+        background: #252424;
+        color: #c9c9c9;
         padding: 0 60px;
     }
     
     .fotos .inner-width{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
         flex-direction: row;
         padding: 100px 20px 0 0;
     }
 
+        
     .row{
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 20px;
     }
 
+        
     .fotitas{
         width: 300px;
         height: 180px;
+        background-color: #1B1B1B;
         margin: 2px;
         padding: 0px;  
+        border: 5px solid #1b1b1b;
         overflow: hidden;
+    
+
     }
+
 
 }
 
@@ -194,6 +250,8 @@
     }
 
     .fotitas{
+        /* width: calc(50% - 10px); */
+        /* width: 45%; */
         width: calc(45% - 10px);
         margin: 0;
         height: auto;
@@ -216,13 +274,17 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        
         padding: 80px 0px 0 0;
+        /* background-color: aqua; */
     }
 
+    
     .fotos .inner-width  .tlt{
         order: 1;
         padding-bottom: 50px;
-        width: 100%;      
+        width: 100%;
+      
     }
 
     .fotos .inner-width img{
@@ -231,14 +293,18 @@
         width: 180px;
         order: 2;
     }
-   
+
+
+        
     .fotos .inner-width .tlt p{
         font-size: 17px;
     }
+
         
     .inner-width h1{
         text-align: center;
         padding-bottom: 10px;
+    
     }
         
     #galeria{
@@ -252,8 +318,10 @@
     }
 }
 
+
 @media screen and (max-width: 400px) {
     .fotos{
         padding: 0 20px;
     }
+
 }

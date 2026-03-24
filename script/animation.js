@@ -77,6 +77,21 @@ if(screen.width >= 1450){
         reset: true
     });
 
+    ScrollReveal().reveal('#painfoto', {
+        origin: 'top',
+        duration: 1000,
+        delay: 1200,
+        distance: '30%',
+        reset: true
+    });
+
+      ScrollReveal().reveal('#sasorifoto', {
+        origin: 'top',
+        duration: 1000,
+        delay: 1400,
+        distance: '30%',
+        reset: true
+    });
 
 
 }

@@ -7,11 +7,9 @@
     width: 100%;
     height: 100vh;
     background-image: url('../src/itachiWall.jpeg');
-  
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     position: relative;
@@ -22,7 +20,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 160px;
+    /* padding: 20px 160px; */
+     padding: 20px 300px;
 }
 
 .line-top img{
@@ -46,15 +45,20 @@
 .top-content{
     font-family: 'Roboto';
     position: absolute;
-    bottom: 120px;
+    bottom: 100px;
+    /* align-self: ; */
     justify-self: flex-end;
-    left: 150px;
+    /* left: 150px; */
+    left: 300px;
+    /* background-color: bisque; */
     width: 500px;
 }
 
+
+
 .top-content h1{
     font-family: 'Fira Sans';
-    padding-bottom: 200px;
+    padding-bottom: 20px;
     color: #fff;
     font-size: 100px;
     text-transform: capitalize;
@@ -152,6 +156,25 @@
 }
 
 
+
+@media screen and (max-width: 1550px){
+        
+    .line-top{
+        padding: 20px 150px;
+    }
+
+        
+
+    .top-content{   
+        bottom: 100px;
+        left: 160px;
+        width: 500px;
+    }
+
+}
+
+
+
 @media screen and (max-width: 1150px){
     
     .line-top{
@@ -163,7 +186,6 @@
         left: 100px;
     }
 
-    
 
     .top-content h1{
         font-size: 90px;
@@ -171,6 +193,7 @@
 
 
 }
+
 
 
 @media screen and (max-width: 850px){
@@ -194,7 +217,7 @@
 
     .top-content h1{
         font-size: 70px;
-        padding-bottom: 280px;
+        padding-bottom: 20px;
     }
 
         
@@ -211,20 +234,25 @@
 
 @media screen and (max-width: 600px){
 
+
+      
     .line-top{
         padding: 20px 40px;
     }
 
+        
     .top-content{
         left: 40px;
         justify-self: flex-end;
         width: 400px;
     }
+
     
     .top-content h1{
         font-size: 50px;
-        padding-bottom: 300px;
+        padding-bottom: 20px;
     }
+
         
     .top-content h3{
         font-size: 22px;
@@ -238,12 +266,12 @@
    
     .bg-inicial{
         background-image: url('../src/itachiWall_celular.jpg');
-        height: 100dvh;
     }
 
     .line-top{
         padding: 20px 30px;
     }
+
      
     .top-content{
         left: 30px;
@@ -251,11 +279,6 @@
 
     .top-content{
         width: 70%;
-    }
-
-    .top-content h1{
-        font-size: 50px;
-        padding-bottom: 50px;
     }
 
 }

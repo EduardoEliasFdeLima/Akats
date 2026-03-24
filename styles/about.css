@@ -6,12 +6,13 @@
     color: #c9c9c9;
 }
 
+
 .contain{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between ;
     align-items: center;
     flex-direction: row;
-    gap: 100px;
+    /* gap: 100px; */
 }
 
 .txts{
@@ -42,8 +43,8 @@
 }
 
 .txts p{
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 28px;
     padding-bottom: 12px;
 }
 
@@ -80,8 +81,14 @@
 
 
 #about .txts:hover .line{
-    /* background-color: aqua; */
     width: 55%;
+}
+
+
+@media screen and (max-width: 1550px){
+    section{
+        padding: 120px 150px;
+    }
 
 }
 
@@ -146,12 +153,14 @@
     section{
         padding: 60px 30px;
     }
+
         
     .txts h2{
         font-size: 40px;
         padding-bottom: 10px;
     }
-     
+
+        
     #about .txts h2::before{
         top: 10px;
         left: -10px;
@@ -174,8 +183,10 @@
         width: 230px;
         height: 230px;
     }
+
             
 }
+
 
 
 @media screen and (max-width: 400px) {
